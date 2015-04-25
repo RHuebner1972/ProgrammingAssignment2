@@ -1,16 +1,14 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Assignment #2, R Programming Course
+## Rich Huebner
 
 ## THis function creates a special matrix object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-  
   inver <- NULL
   set <- function(y) {
     m <<- y
     inver <<- NULL
   }
-  
   get <- function() m
   set_inver <- function(inverse) inver <<- inverse
   get_inver <- function() inver
